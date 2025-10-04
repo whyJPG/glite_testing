@@ -3,9 +3,6 @@
 
 <head>
 
-    <script>
-        window.onbeforeunload = function() { return true};
-    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Geometry Dash</title>
@@ -241,6 +238,7 @@
             }, 2000);
         }
     }
+    window.onbeforeunload = function() { return true};
 </script>
 
 </html>
