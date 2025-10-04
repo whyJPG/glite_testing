@@ -211,7 +211,7 @@
 	var is_run = true;
 </script>
 
-<script src="Build_breeze/UnityLoader.js"></script>
+<script src="Build/UnityLoader.js"></script>
 <script>
     window.onbeforeunload = function(e) {
       return 'Are you sure you want to leave this page?  You will lose any unsaved data.';
@@ -220,7 +220,7 @@
     UnityLoader.compatibilityCheck = function (e, t, r) {
         t();
     };
-    var gameInstance = UnityLoader.instantiate("gameContainer", "Build_breeze/geo.json", {onProgress: UnityProgress});
+    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/geo.json", {onProgress: UnityProgress});
 
     function UnityProgress(gameInstance, progress) { 
         if (is_run == false) { 
