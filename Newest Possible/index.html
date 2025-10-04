@@ -205,11 +205,18 @@
 </svg>
 </body>
 <script>
+   window.onbeforeunload = function(e) {
+    return 'Are you sure you want to leave this page?  You will lose any unsaved data.';
+    };
 	var is_run = true;
 </script>
 
 <script src="Build/UnityLoader.js"></script>
 <script>
+    window.onbeforeunload = function(e) {
+      return 'Are you sure you want to leave this page?  You will lose any unsaved data.';
+    };
+	
     UnityLoader.compatibilityCheck = function (e, t, r) {
         t();
     };
